@@ -1,10 +1,12 @@
 {{! This is the post loop - each post will be output using this markup }}
-<article class="{{post_class}} case-study">
+<article class="{{post_class}} case-study" href="{{url}}">
     <section>
-        <h3 class="post-title"><a href="{{url}}">{{{title}}}</a></h3>
+        <h3 class="post-title">{{{title}}}</h3>
     </section>
 
-  <a href="{{url}}"{{#if image}} style="background-image: url('{{image}}');"{{/if}}>
+    <div class="overlay"></div>
+
+  <a href="{{url}}" class="img" {{#if image}} style="background-image: url('{{image}}');"{{/if}}>
     {{#if image}}<img src="{{image}}" width="0" height="0"/>{{/if}}
   </a>
 </article>
