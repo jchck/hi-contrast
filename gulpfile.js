@@ -14,7 +14,7 @@ gulp.task('sass', function() {
 			sourceMap: true
 		}).on('error', sass.logError))
 
-		.pipe(maps.write('./assets/css'))
+		.pipe(maps.write('./'))
 
-		.pipe(gulp.dest('./'))
+		.pipe(gulp.dest('./assets/css'))
 })

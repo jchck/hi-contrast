@@ -7,7 +7,7 @@
 // -----------------------------------------------------------------------------
 .main-nav {
   animation: header-in .333s ease-out forwards; // Slide In animation
-  background-color: transparent;
+  background-color: $white;
   height: $header-height;
   left: 50%;
   max-width: $site-box;
