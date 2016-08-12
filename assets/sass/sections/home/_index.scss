@@ -39,7 +39,8 @@
 	section{
 		position: absolute;
 		left: 0;
-		bottom: calc(-100% - 20px);
+		bottom: 0px;
+		//bottom: calc(-100% - 20px);
 		width: 100%;
 		padding: 15px;
 		transition: bottom 500ms ease-in-out;
