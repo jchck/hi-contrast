@@ -4,19 +4,6 @@
 {{! The big featured header }}
 {{#if @blog.cover}}
   <header class="hero-section" style="background-image: url({{@blog.cover}})"></header>
-{{else}}
-  <header class="hero-section no-cover">
-    <div class="main-header-content">
-      {{#if @blog.logo}}
-        <figure class="page-logo" style="background-image: url('{{@blog.logo}}');">
-          <img src="{{@blog.logo}}" alt="{{@blog.title}}" width="0" height="0"/>
-        </figure>
-      {{/if}}
-      {{#if @blog.description}}
-        <h3 class="page-description">{{@blog.description}}</h3>
-      {{/if}}
-    </div>
-  </header>
 {{/if}}
 
 {{! The main content area on the homepage }}
