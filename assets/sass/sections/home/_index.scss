@@ -16,11 +16,28 @@
 	flex-wrap: wrap;
 
 	.case-study{
-		display: flex;
-		align-items: center;
+		display: block;
 		width: 100%;
 		max-width: 100%;
 		margin-left: 0;
+
+		&:hover{
+			section{
+				transition: bottom 380ms cubic-bezier(0.215, 0.61, 0.355, 1);
+				bottom: 0;
+			}
+		}
+	}
+
+	section{
+		position: absolute;
+		left: 0;
+		bottom: calc(-100% - 20px);
+		width: 100%;
+		padding: 15px;
+		transition: bottom 500ms ease-in-out;
+		background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+		color: $white;
 	}
 }
 
