@@ -10,9 +10,6 @@
 
     $document.ready(function () {
 
-      var $postContent = $(".post-content");
-      $postContent.fitVids();
-
       $(".menu-button").on("click", function(e){
         e.preventDefault();
 
