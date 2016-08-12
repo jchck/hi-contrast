@@ -1,4 +1,9 @@
 {
-  "name": "Hi Contrast",
-  "version": "1.0"
+  "name": "Hi Contrast Branch",
+  "version": "1.0",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0"
+  }
 }
