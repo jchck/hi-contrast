@@ -7,10 +7,11 @@
 .related-posts {
   @include inline-block;
   margin-top: $distance * 3;
-  width: 50%;
+  width: 100%;
 
   > span {
     display: block;
+    text-align: center;
     font-size: $ftiny;
     font-weight: $light;
     line-height: $auth-image / 2;
@@ -19,13 +20,10 @@
   > a {
     font-size: $ftiny;
     line-height: $auth-image / 2;
+    float: left;
 
-    &::after {
-      content: ', ';
-    }
-
-    &:last-of-type::after {
-      content: '';
+    &:last-of-type{
+      float: right;
     }
   }
 }
