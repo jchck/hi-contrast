@@ -9,7 +9,8 @@
 // Text
 // -----------------------------------------------------------------------------
   p {
-    font-size: $fsmall;
+    //font-size: $fsmall;
+    line-height: 1.33;
 
     + p {
       margin-top: $distance * 2;
